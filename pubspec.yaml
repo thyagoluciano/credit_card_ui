@@ -1,0 +1,38 @@
+name: credit_card_ui
+description: A new Flutter package project.
+version: 1.0.0
+# author:
+# homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_svg: ^0.19.1
+  mask_text_input_formatter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - packages/credit_card_ui/assets/alipay.svg
+    - packages/credit_card_ui/assets/amex.svg
+    - packages/credit_card_ui/assets/chip.png
+    - packages/credit_card_ui/assets/diners.svg
+    - packages/credit_card_ui/assets/discover.svg
+    - packages/credit_card_ui/assets/elo.svg
+    - packages/credit_card_ui/assets/hiper.svg
+    - packages/credit_card_ui/assets/hipercard.svg
+    - packages/credit_card_ui/assets/jcb.svg
+    - packages/credit_card_ui/assets/maestro.svg
+    - packages/credit_card_ui/assets/mastercard.svg
+    - packages/credit_card_ui/assets/mir.svg
+    - packages/credit_card_ui/assets/paypal.svg
+    - packages/credit_card_ui/assets/unionpay.svg
+    - packages/credit_card_ui/assets/visa.svg
