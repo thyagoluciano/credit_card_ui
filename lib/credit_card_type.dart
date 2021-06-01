@@ -44,6 +44,52 @@ extension BrandMask on CreditCardType {
   }
 }
 
+extension BrandName on CreditCardType {
+  String get name {
+    switch (this) {
+      case CreditCardType.visa:
+        return "Visa";
+        break;
+      case CreditCardType.amex:
+        return "Amex";
+        break;
+      case CreditCardType.discover:
+        return "Discover";
+        break;
+      case CreditCardType.mastercard:
+        return "Mastercard";
+        break;
+      case CreditCardType.dinersclub:
+        return "Dinersclub";
+        break;
+      case CreditCardType.jcb:
+        return "JCB";
+        break;
+      case CreditCardType.unionpay:
+        return "Unionpay";
+        break;
+      case CreditCardType.maestro:
+        return "Maestro";
+        break;
+      case CreditCardType.elo:
+        return "Elo";
+        break;
+      case CreditCardType.mir:
+        return "Mir";
+        break;
+      case CreditCardType.hiper:
+        return "Hiper";
+        break;
+      case CreditCardType.hipercard:
+        return "Hipercard";
+        break;
+      default:
+        return "Desconhecido";
+        break;
+    }
+  }
+}
+
 extension BrandImage on CreditCardType {
   String get code {
     switch (this) {
