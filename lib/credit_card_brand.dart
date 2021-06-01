@@ -167,3 +167,12 @@ CreditCardType detectCCType(String ccNumStr) {
 
   return cardType;
 }
+
+String getBrand(String creditCardNumber) {
+  String brand;
+  if (creditCardNumber != null && creditCardNumber.isNotEmpty) {
+    brand = detectCCType(creditCardNumber).code;
+  }
+
+  return brand ?? brand;
+}

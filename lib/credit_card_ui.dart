@@ -3,7 +3,6 @@ library credit_card_ui;
 import 'dart:math';
 
 import 'package:credit_card_ui/credit_card_brand.dart';
-import 'package:credit_card_ui/credit_card_type.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -119,15 +118,6 @@ class _CreditCardUiState extends State<CreditCardUi>
   void dispose() {
     controller.dispose();
     super.dispose();
-  }
-
-  String getBrand(String creditCardNumber) {
-    String brand;
-    if (creditCardNumber != null && creditCardNumber.isNotEmpty) {
-      brand = detectCCType(creditCardNumber).code;
-    }
-
-    return brand ?? brand;
   }
 
   @override
